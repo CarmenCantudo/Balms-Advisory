@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--languages-->
+<link rel="alternate" href="http://www.balmsadvisory.com" hreflang="es-es" />
+<link rel="alternate" href="http://www.balmsadvisory.com/en" hreflang="en-gb" />
+<title>Balms Advisory · Contact Form</title>
+<meta name="description" content="Balms Advisory · Contact Form</title>" />
+<link rel="icon" type="image/png" href="../img/favicon.ico" />
+<meta property="og:title" content="Balms Advisory · Contact Form</title>" />
+<meta property="og:description" content="Balms Advisory · Contact Form</title>" />
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://www.balmsadvisory.com/" />
+<meta property="og:image" content="http://www.balmsadvisory.com/img/logo2.png" />
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- SCRIPT CONTROL DE COOKIES -->
+<div id="barraaceptacion" style="display: block;">
+    <div class="inner">
+        Our site uses cookies. By continuing to use our site you are agreeing to our cookies policy.
+        <a href="javascript:void(0);" class="ok" onclick="PonerCookie();"><b>OK</b></a> | 
+        <a href="http://www.newsprivacy.co.uk/single/#cookie-policy" target="_blank" class="info">More information</a>
+    </div>
+</div>
+ 
+<script>
+function getCookie(c_name){
+    var c_value = document.cookie;
+    var c_start = c_value.indexOf(" " + c_name + "=");
+    if (c_start == -1){
+        c_start = c_value.indexOf(c_name + "=");
+    }
+    if (c_start == -1){
+        c_value = null;
+    }else{
+        c_start = c_value.indexOf("=", c_start) + 1;
+        var c_end = c_value.indexOf(";", c_start);
+        if (c_end == -1){
+            c_end = c_value.length;
+        }
+        c_value = unescape(c_value.substring(c_start,c_end));
+    }
+    return c_value;
+}
+ 
+function setCookie(c_name,value,exdays){
+    var exdate=new Date();
+    exdate.setDate(exdate.getDate() + exdays);
+    var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+    document.cookie=c_name + "=" + c_value;
+}
+ 
+if(getCookie('tiendaaviso')!="1"){
+    document.getElementById("barraaceptacion").style.display="block";
+}
+function PonerCookie(){
+    setCookie('tiendaaviso','1',365);
+    document.getElementById("barraaceptacion").style.display="none";
+}
+</script>
+<!--//FIN BLOQUE COOKIES-->
+
+    <!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101423577-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!--//FIN Google Analytics-->
+        <!-- Temporary navbar container fix -->
+    <style>
+    .navbar-toggler {
+        z-index: 1;
+    }
+    
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+    </style>
+</head>
+<body>
+     <i onclick="topFunction()" id="myBtn" title="Go to top" class="fa fa-arrow-circle-up fa_custom fa-3x"></i>
+<nav class="navbar">
+  <div class="container">
+   	<div class="navbar-logo">
+   		<a class="logo" href="index.html"><img height="80px" id="balmslogo" src="../img/logo2.png"></a>
+      <div class="top__idiomas" id="idiomas">
+			<a class="active">English</a>
+			<div class="idiomas-opciones">
+				<div class="idiomas animated fadeInRight">
+					<a href="../es/contactform.html">Español</a>
+				</div>
+			</div>
+	  </div>
+	</div>
+  </div>
+	  </nav>
+<nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="../index.html"></a></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="defaultNavbar1">
+      <ul class="nav navbar-nav navbar-right navegacion">
+       <li><a href="index.html">PRESENTATION</a></li>
+       <li><a href="strategic-consultancy.html">STRATEGIC<br>CONSULTANCY</a></li>
+		  <li><a href="investment-consultancy.html">INVESTMENT<br>CONSULTANCY</a></li>
+       <li><a href="team.html">TEAM</a></li>
+       <li><a href="international-presence.html">INTERNATIONAL<br>PRESENCE</a></li>
+        <li><a href="contactform.html">CONTACT</a></li>
+        <li><a href="news.html">NEWS</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+<div class="container">
+  <div class="row">
+	  <div class="text-justify col-md-12">
+		<h1 id="presinter">Contact</h1><br>
+		  <p>To send us a message, use this form. We will answer as soon as possible. <br>If you prefer to contact us by phone or fax, please get in touch with our head office in Madrid:</p>
+    	  <p>Balms Advisory<br>
+			Paseo General Martínez Campos, nº 49, 6th floor<br>
+			28010 Madrid<br>
+			Telephone: +34 91 702 0156<br>
+			Fax: +34 91 702 0157</p>
+   	   	  <p>Fields with an asterisk (*) are required.</p><br>
+   	  </div>
+  </div>
+	
+      <br>
+
+<div class="col-md-5">
+    <div class="form-area">  
+        <form role="form" method="post" action="../php/form-en.php">
+        <br style="clear:both">
+                    <div class="form-group">
+    				    <label for="name_id" class="control-label">First name*</label>
+						<input type="text" class="form-control" id="name" name="name" required>
+					</div>
+					<div class="form-group">
+					    <label for="surname_id" class="control-label">Surname*</label>
+						<input type="text" class="form-control" id="surname" name="name" required>
+					</div>
+					<div class="form-group">
+					    <label for="email" class="control-label">Email*</label>
+						<input type="text" class="form-control" id="email" name="email" required>
+					</div>
+					<div class="form-group">
+    					<label for="company" class="control-label">Company / Organization</label>
+    					<input type="text" class="form-control" id="company" name="company">
+					</div>
+					<div class="form-group">
+    					<label for="jobposition" class="control-label">Position</label>
+    					<input type="text" class="form-control" id="jobposition" name="jobposition">
+					</div>
+					<div class="form-group">
+						<label for="mobile" class="control-label">Phone</label>
+						<input type="text" class="form-control" id="mobile" name="mobile">
+					</div>
+					<div class="form-group">
+						<label for="address" class="control-label">Address*</label>
+						<input type="text" class="form-control" id="address" name="address" required>
+						<input type="text" class="form-control" id="addresss" name="address">
+					</div>
+                   <div class="form-group">
+						<label for="city" class="control-label">Location*</label>
+						<input type="text" class="form-control" id="city" name="city" required>
+					</div>
+                   <div class="form-group">
+						<label for="county" class="control-label">Province</label>
+						<input type="text" class="form-control" id="county" name="county">
+					</div>
+                   <div class="form-group">
+						<label for="postcode" class="control-label">Postal Code</label>
+						<input type="text" class="form-control" id="postcode" name="postcode">
+					</div>
+                   <div class="form-group">
+						<label for="country" class="control-label">Country*</label>
+						<input type="text" class="form-control" id="country" name="country" required>
+					</div>
+                    <div class="form-group">
+						<label for="message" class="control-label">Your message*</label>
+						<textarea class="form-control" type="textarea" id="message" name="message" maxlength="240" rows="7"></textarea>                    
+                    </div>
+                    <div class="checkbox">
+						<label id="declaracion">Declaration of data protection*</label>
+					  	<label>
+						  <input type="checkbox" value="1" required="" checked class="text-muted"> I have read and accept the <a href="#">Privacy Policy</a> and the <a>Terms of Use.</a>
+						</label>
+					</div>
+            
+        <button type="submit" id="submit" name="submit" class="btn btn-primary pull-left">Send</button><br>
+        </form>
+    </div>
+</div>
+
+	
+     	<br>
+</div><br>
+ <div class="container-fluid">
+  <div class="row">
+    <div class="text-center" id="footer">
+    <div class="container footer_banner">
+    	<div class="text-left col-lg-4">
+   		  <ul class="listfooter"><li><a href="index.html">Presentation</a></li>
+    			<li><a href="strategic-consultancy.html">Strategic Consultancy</a></li>
+    			<li><a href="investment-consultancy.html">Investment Consultancy</a></li>
+    			<li><a href="team.html">Team</a></li>
+    		</ul>
+    	</div>
+    	<div class="text-left col-lg-4">
+    		<ul class="listfooter">
+    			<li><a href="international-presence.html">International Presence</a></li>
+    			<li><a href="contactform.html">Contact</a></li>
+    			<li><a href="news.html">News</a></li>
+    		</ul>
+    	</div>
+		<div class="text-left col-lg-4">
+    		<ul class="listfooter">
+    			<li><a href="legal-notice.html">Legal Notice</a></li>
+    			<li><a href="data-protection-policy.html">Data Protection Policy</a></li>
+    			<li><a href="http://www.newsprivacy.co.uk/single/#cookie-policy" target="_blank">Cookies</a></li>
+    		</ul>
+    	</div>
+    </div>
+<p>&copy; 2017 &middot; <a class="balmsabog" href="https://www.balms.es/es/" target="_blank">BALMS Advisory</a></p>
+    </div>
+  </div>
+
+</div>
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="../jquery/jquery.min.js"></script>
+<script src="../js/contactform.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="../js/bootstrap.js"></script>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/animate.min.css">
+<!-- Bootstrap -->
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="../css/stylesheet.css" rel="stylesheet">
